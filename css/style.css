@@ -144,12 +144,11 @@ span {
 }
 
 .skils {
-    margin-top: 5rem;
+    margin-top: 1rem;
 }
 
 .skils-container {
-    display: flex;
-    flex-direction: row;
+    display: grid;
     gap: 1rem;
     margin-top: 5rem;
 }
@@ -187,6 +186,9 @@ background: linear-gradient(90deg, rgba(71,153,18,1) 33%, rgba(31,191,20,1) 63%,
     margin-bottom: 1rem;
 }
 
+.skil-low p {
+    
+}
 
 
 
@@ -422,10 +424,6 @@ footer {
         flex-direction: column;
     }
 
-    .skils-container {
-        display: flex;
-        flex-direction: column;
-    }
 
 }
 
@@ -434,6 +432,10 @@ footer {
     .home-img, .about-img {
         width: 65%;
         max-width: 65%;
+    }
+
+    .skils-container {
+        grid-template-columns: auto auto;
     }
     
 }
@@ -479,8 +481,7 @@ footer {
     }
 
     .skils-container {
-        display: flex;
-        flex-direction: row;
+        grid-template-columns: auto auto auto;
     }
 
 }
